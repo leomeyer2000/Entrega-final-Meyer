@@ -1,0 +1,18 @@
+{% extends 'Pages/home.html' %}
+
+{% block title %}
+    Editar Pagina
+{% endblock title %}
+
+
+{% block main %}
+
+    <form method="post">{% csrf_token %}
+        <table>
+            {{form.as_table }}
+        </table>
+        <input type="submit" value="Editar">
+    </form>
+
+
+{% endblock main %}

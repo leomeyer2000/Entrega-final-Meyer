@@ -1,0 +1,73 @@
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+
+body {
+    background-color: white;
+    font-family: 'Poppins', 'Nunito',  sans-serif;
+    padding-top: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+p {
+    color: #363636;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;  
+    background-color: rgb(192, 245, 92);
+  }
+  
+  .container{
+    background-color: rgb(169, 233, 117);
+  }
+  
+  
+  .main{
+    font-size: medium;
+    background-color: rgb(170, 224, 68);
+  }
+  
+  .nav-link{
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  .nav-link:hover{
+    background-color: #a4f071;
+    color: black;
+  }
+  
+  .nav-link:active{
+    background-color: rgb(41, 112, 0);
+    color: white;
+  }
+  
+  .bloque{
+    background-color: rgb(56, 202, 43);
+  }
+  
+  body{
+    background-color: rgb(231, 252, 215);
+  }
+
+  .avatar{
+    display: flex;
+    justify-content: center;
+  }

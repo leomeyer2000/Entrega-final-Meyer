@@ -1,0 +1,15 @@
+{% extends 'Pages/home.html' %}
+
+{% block title %}
+    Borrar Pagina
+{% endblock title %}
+
+
+{% block main %}
+
+    <form method="POST">{% csrf_token %}
+        Borrar publicacion {{ object.title }}?
+        <input type="submit" value="Eliminar">
+    </form>
+
+{% endblock main %}

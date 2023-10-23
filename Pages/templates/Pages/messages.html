@@ -1,0 +1,28 @@
+{% extends 'Pages/home.html' %}
+
+{% block title %}
+    Mensajes
+{% endblock title %}
+
+
+{% block main %}
+
+    {% if messages %}
+        
+        {% for message in messages %}
+
+            <div class="container">
+                <p> {{message.sender}} </p>
+                <p> {{message.content}} </p>
+                <p> {{message.date}} </p>
+            </div>    
+        {% endfor %}
+    {% else %}
+
+        <p>
+            No hay mensajes
+        </p>
+    {% endif %}
+
+
+{% endblock main %}

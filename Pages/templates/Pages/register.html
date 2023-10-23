@@ -1,0 +1,21 @@
+{% extends 'Pages/home.html' %}
+
+{% block title %}
+    Registro
+{% endblock title %}
+
+
+{% block main %}
+<div class="container text-center">
+    
+    <div class="container">
+        <div class="text-center">
+            <form action="" method="POST">{% csrf_token %}
+                {{form.as_p}}
+                <button type="submit"> Sign Up </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock main %}

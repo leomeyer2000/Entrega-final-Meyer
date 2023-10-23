@@ -1,0 +1,21 @@
+{% extends 'Pages/home.html' %}
+
+{% block title %}
+    Editar Perfil
+{% endblock title %}
+
+
+{% block main %}
+
+    <div>
+    <form method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Editar"> 
+    </form>
+    </div>
+
+    <br>
+
+    <p> Necesitas cambiar la contraseña? <a href="{% url 'PasswordChange' %}"> Click aqui </a> </p>
+
+{% endblock main %}

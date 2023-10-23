@@ -1,0 +1,16 @@
+{% extends 'Pages/home.html' %}
+
+{% block title %}
+    Envio Mensaje
+{% endblock title %}
+
+
+{% block main %}
+
+    <form method="post"> {% csrf_token%}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar">
+    </form>
+
+
+{% endblock main %}

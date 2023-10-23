@@ -1,0 +1,16 @@
+{% extends 'Pages/home.html' %}
+
+{% block title %}
+    Editar avatar
+{% endblock title %}
+
+
+{% block main %}
+
+    <form method="post" enctype="multipart/form-data" class="avatar">{% csrf_token %}
+        {{form.as_p }}
+        <input type="submit" value="Cambiar">
+    </form>
+
+
+{% endblock main %}
